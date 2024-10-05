@@ -145,6 +145,19 @@
     display: flex; 
     gap: 20px;
   }
+
+  .iframebelow{
+    width: 50%;
+  }
+
+  .footer{
+    background-color: #f8c053;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
   
   @media only screen and (max-width: 768px) {
     .navbar div:not(:nth-child(3)) {
@@ -182,6 +195,8 @@
       line-height: 24px;
     }
   }
+
+
   
   @media only screen and (max-width: 480px) {
     /* Hide all navbar divs except the logo */
