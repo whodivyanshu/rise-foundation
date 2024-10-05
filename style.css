@@ -147,18 +147,15 @@
   }
   
   @media only screen and (max-width: 768px) {
-    /* Hide all navbar divs except the logo */
     .navbar div:not(:nth-child(3)) {
-      display: none; /* Hide everything except the logo */
+      display: none;
     }
   
-    /* Adjust the navbar logo for mobile */
     .navbar img {
       width: 80px;
       height: 80px;
     }
   
-    /* Banner adjustments */
     .banner {
       background-position: center;
       background-size: cover;
