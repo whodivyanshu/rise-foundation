@@ -110,6 +110,23 @@
     text-underline-offset: 10px; 
     font-size: 30px;
   }
+
+  .iframebtn{
+    background-color: #f8c053;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .iframediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
   
 
   .body2content{

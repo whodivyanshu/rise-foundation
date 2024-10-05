@@ -65,7 +65,7 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <div>
+        <div class="iframediv">
           <div style="text-align: center; font-weight: bold; font-size: 30px">
             Rise Foundation: Dedicated to Education, Health, and Food
           </div>
@@ -74,6 +74,7 @@
             food, which encourages education, provides healthcare, and assists
             in the fight against hunger.
           </div>
+          <button class="iframebtn">Read More</button>
         </div>
       </div>
       <div class="body2">
@@ -187,7 +188,6 @@
       // Select the navbar
       const navbar = document.querySelector(".navbar");
 
-      // Function to change navbar background on scroll
       function changeNavbarBackground() {
         if (window.scrollY > 0) {
           navbar.classList.add("scrolled");
@@ -196,7 +196,6 @@
         }
       }
 
-      // Listen for scroll events
       window.addEventListener("scroll", changeNavbarBackground);
     </script>
   </body>
