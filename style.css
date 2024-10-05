@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: gray;
+    height: 130px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    transition: background-color 0.3s ease;
+    z-index: 1000; 
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+
+  .navbar.scrolled {
+    background-color: #f8c053; /* Background color on scroll */
+  }
+
+  .navheight{
+    height: 130px;
+  }
+  
+  .navbar div {
+    padding: 10px 40px;
+  }
+  
+  .navbar div h3 {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .donateus-navbar {
+    background-color: white;
+    border-radius: 40px;
+  }
+  
+  .donateus-navbar .donateusbtn {
+    color: black;
+  }
+  
+  .donateus-navbar:hover {
+    background-color: #f8c053;
+  }
+  
+  .donateus-navbar:hover .donateusbtn {
+    color: white;
+  }
+  
+  .banner {
+    height: 50vh;
+    background-color: black;
+    background-image: url("./images/banner.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 85vw;
+  }
+  
+  .bannercontent {
+    width: 30%;
+    padding-top: 100px;
+    color: white;
+    padding-left: 100px;
+  }
+  
+  .bannercontent h4 {
+    font-size: 23px;
+  }
+  
+  .bannercontent h2 {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  
+  .bannercontent p {
+    width: 80%;
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 30px;
+  }
+
+  .b-gradient{
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .body2{
+    padding: 200px 0px 200px 0px;
+    background-color: white;
+    color: gray;
+  }
+
+  .body2heading {
+    text-align: center;
+    color: gray;
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 10px; 
+    font-size: 30px;
+  }
+  
+
+  .body2content{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .body2list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .body2points{
+    display: flex; 
+    gap: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Hide all navbar divs except the logo */
+    .navbar div:not(:nth-child(3)) {
+      display: none; /* Hide everything except the logo */
+    }
+  
+    /* Adjust the navbar logo for mobile */
+    .navbar img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    /* Banner adjustments */
+    .banner {
+      background-position: center;
+      background-size: cover;
+      height: 60vh;
+    }
+  
+    .bannercontent {
+      width: 80%;
+      padding-left: 20px;
+      padding-top: 50px;
+    }
+  
+    .bannercontent h4 {
+      font-size: 18px;
+    }
+  
+    .bannercontent h2 {
+      font-size: 24px;
+    }
+  
+    .bannercontent p {
+      width: 90%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Hide all navbar divs except the logo */
+    .navbar div:not(:nth-child(3)) {
+      display: none;
+    }
+  
+    /* Adjust the navbar logo for very small screens */
+    .navbar img {
+      width: 200px;
+      height: 40px;
+    }
+  
+    /* Banner adjustments */
+    .banner {
+      height: 50vh;
+    }
+  
+    .bannercontent {
+      width: 90%;
+      padding-left: 10px;
+      padding-top: 30px;
+    }
+  
+    .bannercontent h4 {
+      font-size: 16px;
+    }
+  
+    .bannercontent h2 {
+      font-size: 20px;
+    }
+  
+    .bannercontent p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  
