@@ -214,21 +214,21 @@
           <div class="gallery">
             <img
               style="width: 100%; height: 100%"
-              src="./images/cow.jpg"
+              src="./images/gallery4.jpg"
               alt=""
             />
           </div>
           <div class="gallery">
             <img
               style="width: 100%; height: 100%"
-              src="./images/gallery2.jpg"
+              src="./images/gallery5.jpg"
               alt=""
             />
           </div>
           <div class="gallery">
             <img
               style="width: 100%; height: 100%"
-              src="./images/gallery3.jpg"
+              src="./images/gallery6.jpg"
               alt=""
             />
           </div>
@@ -293,6 +293,12 @@
       }
 
       window.addEventListener("scroll", changeNavbarBackground);
+      document.querySelectorAll(".faq-question").forEach((item) => {
+        item.addEventListener("click", () => {
+          const faq = item.parentElement;
+          faq.classList.toggle("active");
+        });
+      });
     </script>
   </body>
 </html>
